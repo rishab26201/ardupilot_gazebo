@@ -160,7 +160,8 @@ and so on...
 You will need to edit your world for any combination of Rover, Plane, Copter, etc...
 In the world file, similar to filename.world, find <model> tag in the file somewhere in bottom, add models of vehicles, while adding vehicles, change the argument in `<uri>model://folder_containing_model_X</uri>`. For each model used, this argument should have unique folder_name which contains model.config and model.sdf corrosponding to that vehicle.
 Open the model.config file, and find `<fdm_port_in>9002</fdm_port_in>`, the port numberr should be unique for every model. And port should corrospond to udp port as shown above in example at a gap of 10.
-Start sitl simulation with a addition parameter to use different directory as shown below-
+Start sitl simulation with a addition parameter to use different directory as shown below.
+ 
 For Copter:
 `sim_vehicle.py -v ArduCopter -f gazebo-iris -m --mav10 --console --use-dir copter0 -I0`
 `sim_vehicle.py -v ArduCopter -f gazebo-iris -m --mav10 --console --use-dir copter1 -I1`
