@@ -61,7 +61,7 @@ sudo apt-get install libgazebo8-dev
 
 **Common :**
 ````
-git clone https://github.com/SwiftGust/ardupilot_gazebo
+git clone https://github.com/rishab26201/ardupilot_gazebo
 cd ardupilot_gazebo
 mkdir build
 cd build
