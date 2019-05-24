@@ -36,6 +36,8 @@ This assume that your are using Ubuntu 16.04
 
 **include :** header files for Gazebo - ArduPilot Plugin
 
+Copy and paste models_gazebo in /.gazebo folder and rename it as models
+
 # Getting Started :
 ## How to Install :
 I assume you already have Gazebo 7+ installed with ROS (or without).  
@@ -200,3 +202,5 @@ sudo cp -a /usr/lib/x86_64-linux-gnu/gazebo-7.0/plugins/ /usr/lib/x86_64-linux-g
 ````
 
 Path mismatch is confirmed as ROS's glitch. It only happens with Gazebo 7
+
+The red sheet for landing is added. There was initial slipping of robot when no input applied. This seems to be corrected when the mass of the rover and wheels is reduced. Maybe Gazebo joints couldnt handle the weight.
